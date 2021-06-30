@@ -23,7 +23,12 @@ export default function Heroes({heroes}){
 
 
     return(
+
    <div>
+       <h1 className="herosTitle">CHOOSE YOUR HERO</h1>
+       <p>From magical tacticians to fierce brutes and cunning rogues,
+            Dota 2's hero pool is massive and limitlessly diverse.
+             Unleash incredible abilities and devastating ultimates on your way to victory.</p>
         <div className="allSearch">
           <form  action="/heroes">
              <input type="text"  id="seach" placeholder="Search" className="search" onChange={handleChange}/>
@@ -34,6 +39,8 @@ export default function Heroes({heroes}){
         <div className="heroList">
             {filteredHero.map((hero)=>{
         return(
+            
+            
             <Hero hero={hero}/>
 
                 )
@@ -42,7 +49,7 @@ export default function Heroes({heroes}){
         </div>
 
     </div>
-        
+     
         
         
    

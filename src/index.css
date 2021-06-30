@@ -15,6 +15,8 @@ header {
   align-items: center;
   position: absolute;
   z-index: 3;
+  margin-top: 40px;
+  margin-left: 20px;
  
   
   
@@ -94,7 +96,7 @@ header nav a:last-of-type {
 
   }
   .heroBtn:hover{
-    transform: scale(2);
+    transform: scale(1.5);
     
     filter: brightness(150%);
   }
@@ -207,7 +209,7 @@ a{
   font-size: 40px;
 }
 .allSearch{
-  padding-top: 200px;
+  
   margin-bottom: 50px;
 }
 
@@ -250,4 +252,24 @@ a{
   color: antiquewhite;
   margin-right: 30px;
   font-family: 'Raleway', sans-serif;
+}
+
+
+.herosTitle{
+  color: bisque;
+  font-family: 'Raleway', sans-serif;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 150px;
+ 
+}
+p{
+  color: bisque;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  padding-bottom: 50px;
+  font-size: 25px;
+
 }

@@ -28,6 +28,11 @@ console.log(props)
              console.log(data)
              const filterData= data.filter(x=>x.id.toString()===id)
              console.log(filterData)
+             const attribute = {
+                "agi": "Agility",
+                "int": "Intelligence",
+                "str":"Strength"
+             };
 
              filterData.forEach(hero=>{
         
@@ -36,12 +41,14 @@ console.log(props)
               let pngName = hero.localized_name.toLowerCase().replace("-", "").replace(" ", "_");
                hero.fullImage= `https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/${pngName}.png`
                hero.loopImage = `https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/${pngName}.webm`
+               hero.primary_attr = attribute[hero.primary_attr];
+            
+                
         
-
      
      });
-    
-   
+       
+     
 			
         setDetail(filterData[0])
 
@@ -59,6 +66,7 @@ console.log(props)
      if(!detail){
          return null
      }
+     
 
     
     return (
@@ -85,6 +93,7 @@ console.log(props)
                 <h1 className="h2" id="names">{detail.localized_name}</h1>
                 
                 <h1 className="h2">Attack Type: {detail.attack_type}</h1>
+                
                 <h1 className="h2">Primary Attribute: {detail.primary_attr}</h1>
                 <h1 className="h2">Roles: {detail.roles[0]} {detail.roles[1]} {detail.roles[2]} {detail.roles[3]}</h1>
                 
