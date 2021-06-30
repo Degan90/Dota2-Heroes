@@ -9,7 +9,7 @@ import intelligence from "../img/intelligence.png"
 
 export default function Details(props){
   
-
+console.log(props)
     
 
     
@@ -40,9 +40,10 @@ export default function Details(props){
 
      
      });
-     
+    
+   
 			
-            setDetail(data[id-1])
+        setDetail(filterData[0])
 
         }catch(err){
             console.log(err)

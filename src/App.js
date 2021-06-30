@@ -21,6 +21,7 @@ const [heroes, setHeroes]=useState([])
       const response = await fetch("https://api.opendota.com/api/heroStats");
       const data = await response.json()
       console.log(data)
+      
 
       data.forEach(hero=>{
         
@@ -33,6 +34,8 @@ const [heroes, setHeroes]=useState([])
 
       
       });
+      data[120].image="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png"
+      
       setHeroes(data)
       
       

@@ -159,22 +159,27 @@ header nav a:last-of-type {
  
 
 }
-
+.loopImage{
+  height: 600px;
+  margin-left: 200px;
+  
+}
 .video{
  
   position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: -2;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
- 
-  
+  object-fit: cover;
+	height: 100%;
+	width: 177.77777778vh; 
+	min-width: 100%;
+	min-height: 56.25vw; 
   
   
 }
+
+
 
 .dota2Simon{
   min-width: 350px;
@@ -221,11 +226,7 @@ a{
 
 }
 
-.loopImage{
-  height: 600px;
-  margin-left: 200px;
-  
-}
+
 .wholeDetails{
   padding-top: 200px;
   display: grid;

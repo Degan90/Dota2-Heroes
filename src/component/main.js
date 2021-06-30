@@ -6,8 +6,8 @@ export default function Main(){
     return(
     <div className="main">
       
-      <div className="video" >
-        <video autoPlay preload="auto" loop muted playsInline >
+      <div >
+        <video autoPlay preload="auto" loop muted playsInline  className="video">
             <source type="video/mp4"
              src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_02.mp4"/>
         </video>

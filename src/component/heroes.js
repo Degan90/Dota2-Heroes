@@ -6,6 +6,8 @@ export default function Heroes({heroes}){
 
     const[search,setSearch] = useState("")
     const[filteredHero,setFilteredHero]=useState([])
+    
+    console.log(filteredHero)
 
 
     const handleChange = (e)=>{
