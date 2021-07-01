@@ -27,11 +27,13 @@ console.log(props)
             const data = await response.json();
              console.log(data)
              const filterData= data.filter(x=>x.id.toString()===id)
-             console.log(filterData)
+             console.log(filterData);
+
+
              const attribute = {
                 "agi": "Agility",
                 "int": "Intelligence",
-                "str":"Strength"
+                "str": "Strength"
              };
 
              filterData.forEach(hero=>{

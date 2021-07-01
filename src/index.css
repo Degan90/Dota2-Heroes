@@ -1,6 +1,10 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,400&display=swap');
+
+
+  
+
 html,body{
   background-color: rgb(41, 41, 41);
   min-width:100%;
@@ -108,7 +112,7 @@ header nav a:last-of-type {
   }
   #names{
     font-weight: 900;
-    font-size: 50px;
+    font-size: 60px;
   }
   
   .h2{
@@ -148,6 +152,7 @@ header nav a:last-of-type {
 .title{
   font-size: 60px;
   line-height: 113%;
+  background-color: transparent;
   
   letter-spacing: 5px;
   font-weight: 900;
@@ -197,7 +202,7 @@ header nav a:last-of-type {
     transition-property: filter,transform,box-shadow;
     transition-timing-function: ease-in-out;
     transition-duration: .1s;
-    margin-left: 1000px;
+    margin-left: 60%;
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
@@ -208,10 +213,7 @@ a{
   text-align: center;
   font-size: 40px;
 }
-.allSearch{
-  
-  margin-bottom: 50px;
-}
+
 
 .search{
   width: 250px;
@@ -238,7 +240,7 @@ a{
 }
 
 .des{
-  width: 400px;
+  width: 500px;
   margin-left: 100px;
   
   
@@ -261,6 +263,7 @@ a{
   font-size: 80px;
   text-align: center;
   padding-top: 150px;
+
  
 }
 p{
@@ -271,5 +274,139 @@ p{
   margin: auto;
   padding-bottom: 50px;
   font-size: 25px;
+
+}
+button{
+  background-color: transparent;
+}
+
+.filterBtn{
+  margin-left: 20%;
+  margin-bottom: 3%;
+}
+
+@media (max-width:800px ) {
+  
+  .herosTitle{
+    font-size: 50px;
+    
+  }
+  .h3{
+    font-size: 10px;
+  }
+  p{
+    font-size: 20px
+  }
+  .heroBtns{
+    color: azure;
+    
+    width: 115px;
+    
+    height: 63px;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.16), 0 3px 6px rgba(255, 255, 255, 0.23);
+
+  }
+
+.dota2Simon{
+    min-width: 300px;
+    height: 80px;
+    border-radius: 6px;
+    border: 3px solid #ffffff90;
+    box-shadow: 0px 0px 5px #000;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+    transition-property: filter,transform,box-shadow;
+    transition-timing-function: ease-in-out;
+    transition-duration: .1s;
+    margin-left: 400px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+  .heroList {
+ 
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    grid-auto-rows: minmax(20px,auto);
+    grid-gap: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 50px;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.16), 0 3px 6px rgba(255, 255, 255, 0.23);
+    justify-content: space-between;
+    
+   }
+   .title{
+    font-size: 40px;
+ 
+   
+  
+  }
+
+}
+
+@media (max-width:400px ){
+  .herosTitle{
+    font-size: 30px;
+    
+  }
+  p{
+    font-size: 15px;
+    width: 70%;
+  }
+  
+  .heroBtns{
+    color: azure;
+    
+    width: 60px;
+    
+    height: 33px;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.16), 0 3px 6px rgba(255, 255, 255, 0.23);
+
+  }
+  .h3{
+    font-size: 10px;
+  }
+  .heroList {
+ 
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50px,1fr));
+    grid-auto-rows: minmax(20px,auto);
+    grid-gap: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 50px;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.16), 0 3px 6px rgba(255, 255, 255, 0.23);
+    justify-content: space-between;
+    
+   }
+   .homeBtn{
+    color: azure;
+    
+    width: 80px;
+    
+    height: 20px;
+   
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    margin-right: 40px;;
+    margin-top: 20px;
+    margin-left: 20px;;
+  }
+  .heroBtn{
+    color: azure;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-decoration: none;
+
+  }
 
 }

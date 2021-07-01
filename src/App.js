@@ -10,6 +10,7 @@ import Details from "./component/details"
 
 
 
+
 function App() {
 const [heroes, setHeroes]=useState([])
 
@@ -57,7 +58,7 @@ const [heroes, setHeroes]=useState([])
       
       <Header/>
       <Route exact  path="/" render={()=><Main/> }/>
-      <Route  path="/heroes" render={()=><Heroes heroes={heroes}/>} />
+      <Route  path="/heroes" render={()=><Heroes heroes={heroes} setHeroes={setHeroes} getHeroes={getHeroes}/>} />
       <Route  path="/details/:id" render={()=><Details heroes= {heroes} />} />
     </div>
    
