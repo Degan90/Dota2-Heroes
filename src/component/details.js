@@ -9,14 +9,14 @@ import intelligence from "../img/intelligence.png"
 
 export default function Details(props){
   
-console.log(props)
+
     
 
     
 
 
     let{id}=useParams();
-    console.log(id)
+    
 
     const [detail, setDetail] = useState(null)
     
@@ -25,9 +25,9 @@ console.log(props)
         try{
             const response = await fetch( `https://api.opendota.com/api/heroStats`)
             const data = await response.json();
-             console.log(data)
+             
              const filterData= data.filter(x=>x.id.toString()===id)
-             console.log(filterData);
+             
 
 
              const attribute = {
@@ -63,7 +63,7 @@ console.log(props)
         
 	},[])
 
-    console.log(detail)
+    
 
      if(!detail){
          return null

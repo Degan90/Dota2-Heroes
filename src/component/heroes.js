@@ -15,9 +15,7 @@ export default function Heroes({heroes}){
     const[filteredHero,setFilteredHero]=useState(heroes)
     const [showFilter, setShowFilter] = useState(false);
     
-    console.log(filteredHero)
-    console.log(heroes)
-
+    
   
    
 
@@ -60,7 +58,7 @@ export default function Heroes({heroes}){
     }
 
     
-    console.log(heroes)
+    
 
     return(
 
