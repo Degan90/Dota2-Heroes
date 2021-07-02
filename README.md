@@ -1,3 +1,23 @@
+DOTA2 HEROES
+
+Project Description:
+My App is called Dota2 Heroes It's an app that shows the all the Dota 2 heroes and if you click on hero gives you the detail and attributes of that hero. 
+
+Link To Site:https://api.opendota.com/api/heroStats
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
