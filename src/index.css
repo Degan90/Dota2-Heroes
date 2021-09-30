@@ -347,7 +347,7 @@ button{
 
 }
 
-@media (max-width:400px ){
+@media (max-width:420px ){
   .herosTitle{
     font-size: 30px;
     
@@ -384,12 +384,8 @@ button{
    }
    .homeBtn{
     color: azure;
-    
     width: 80px;
-    
     height: 20px;
-   
-    
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -427,7 +423,7 @@ button{
    
   }
   .dota2Simon{
-    min-width: 200px;
+      min-width: 200px;
       height: 100px;
       border-radius: 6px;
       border: 3px solid #ffffff90;
